@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MAYA Estetica Benessere &amp; Grotta del Sale · Torino, Via Monginevro</title>
+<meta name="description" content="MAYA a Torino (Santa Rita): estetica viso e corpo, nails, epilazione laser a diodo, percorsi sposa e una grotta del sale per rallentare. Richiedi il tuo appuntamento.">
+<meta name="theme-color" content="#3B1F2B">
+<meta property="og:title" content="MAYA · Estetica, Benessere &amp; Grotta del Sale — Torino">
+<meta property="og:description" content="Un luogo dove rallentare, e stare bene. Via Monginevro 174/d, Torino.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233B1F2B'/%3E%3Cpath d='M7 25V14a9 9 0 0 1 18 0v11z' fill='%23E9B8A6'/%3E%3Ccircle cx='16' cy='14' r='3.5' fill='%23FFF1DD'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "MAYA Estetica Benessere & Grotta del Sale",
+  "telephone": "+393462192901",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Monginevro, 174/d",
+    "postalCode": "10141",
+    "addressLocality": "Torino",
+    "addressRegion": "TO",
+    "addressCountry": "IT"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 45.0643971, "longitude": 7.6292719 },
+  "hasMap": "https://www.google.it/maps/place/MAYA+Estetica+Benessere+%26+Grotta+del+Sale/@45.0643971,7.6292719,17z"
+}
+</script>
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  /* palette "sale rosa dell'Himalaya" */
+  --salt:#FBF7F2;
+  --salt-2:#F4EAE0;
+  --salt-3:#EBDCCF;
+  --rose:#E9B8A6;
+  --rose-2:#D9917F;
+  --rose-deep:#B4564A;      /* CTA, 4.8:1 con bianco */
+  --plum:#3B1F2B;
+  --plum-2:#5A2E3F;
+  --ink:#2B1A20;
+  --muted:#6B5A5F;          /* 6:1 su salt */
+  --gold:#C9A36B;
+  --line:rgba(59,31,43,.14);
+
+  --ff-display:"Playfair Display", Georgia, "Times New Roman", serif;
+  --ff-body:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --r-sm:12px; --r-md:20px; --r-lg:32px;
+  --sp-1:.5rem; --sp-2:1rem; --sp-3:1.5rem; --sp-4:2.5rem; --sp-5:4rem; --sp-6:6.5rem;
+  --shadow-1:0 1px 2px rgba(59,31,43,.06), 0 8px 24px -8px rgba(59,31,43,.14);
+  --shadow-2:0 2px 4px rgba(59,31,43,.06), 0 30px 60px -24px rgba(59,31,43,.35);
+  --ease:cubic-bezier(.22,.7,.2,1);
+  --wrap:1180px;
+}
+
+/* ============ BASE ============ */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--salt);color:var(--ink);
+  font-family:var(--ff-body);font-size:1.0625rem;line-height:1.65;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+/* grana di sale su tutta la pagina */
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:100;opacity:.07;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .23 0 0 0 0 .12 0 0 0 0 .17 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--ff-display);font-weight:500;line-height:1.08;margin:0;letter-spacing:-.01em;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+em{font-style:italic;color:var(--rose-deep)}
+.wrap{width:min(100% - 2.5rem, var(--wrap));margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.icon{width:1.25em;height:1.25em;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+:focus-visible{outline:3px solid var(--rose-deep);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:1rem;top:-4rem;background:var(--plum);color:var(--salt);padding:.7rem 1rem;border-radius:var(--r-sm);z-index:200;transition:top .2s}
+.skip:focus{top:1rem}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.7rem;
+  font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--rose-deep);
+}
+.eyebrow::before{content:"";width:2.2rem;height:1px;background:currentColor}
+
+/* ============ BUTTONS ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  min-height:3.1rem;padding:.8rem 1.6rem;border-radius:999px;border:1.5px solid transparent;
+  font:600 .98rem/1 var(--ff-body);text-decoration:none;cursor:pointer;
+  transition:background-color .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease), box-shadow .25s var(--ease);
+}
+.btn-primary{background:var(--plum);color:var(--salt);box-shadow:0 10px 24px -12px rgba(59,31,43,.7)}
+.btn-primary:hover{background:var(--plum-2)}
+.btn-rose{background:var(--rose-deep);color:#fff}
+.btn-rose:hover{background:#9c453a}
+.btn-ghost{border-color:var(--plum);color:var(--plum);background:transparent}
+.btn-ghost:hover{background:var(--plum);color:var(--salt)}
+.btn-light{background:var(--salt);color:var(--plum)}
+.btn-light:hover{background:var(--rose)}
+.btn .icon{transition:transform .25s var(--ease)}
+.btn:hover .icon-arrow{transform:translateX(4px)}
+
+/* ============ DRAFT BAR ============ */
+.draft-bar{
+  background:var(--plum);color:var(--salt);font-size:.82rem;
+  display:flex;gap:1rem;align-items:center;justify-content:center;padding:.55rem 3rem .55rem 1rem;position:relative;text-align:center;
+}
+.draft-bar b{color:var(--rose)}
+.draft-bar button{
+  position:absolute;right:.5rem;top:50%;transform:translateY(-50%);
+  width:2.75rem;height:2.75rem;display:grid;place-items:center;border:0;background:none;color:inherit;cursor:pointer;border-radius:50%;
+}
+.draft-bar button:hover{background:rgba(255,255,255,.12)}
+
+/* ============ HEADER ============ */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(251,247,242,.82);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);
+  border-bottom:1px solid transparent;transition:border-color .3s;
+}
+.site-header.scrolled{border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:4.75rem;gap:1.5rem}
+.logo{display:flex;align-items:center;gap:.8rem;text-decoration:none}
+.logo-mark{width:2.7rem;height:2.7rem;flex:none}
+.logo-text{display:flex;flex-direction:column;line-height:1}
+.logo-text strong{font-family:var(--ff-display);font-size:1.6rem;font-weight:600;letter-spacing:.2em;color:var(--plum);padding-left:.1em}
+.logo-text small{font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:.35rem;font-weight:500}
+.menu{display:flex;align-items:center;gap:2rem;list-style:none;margin:0;padding:0}
+.menu a{
+  text-decoration:none;font-weight:500;font-size:.95rem;color:var(--ink);position:relative;padding:.4rem 0;
+}
+.menu a:not(.btn)::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:1.5px;background:var(--rose-deep);
+  transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease);
+}
+.menu a:not(.btn):hover::after{transform:scaleX(1)}
+.menu .btn{min-height:2.75rem;padding:.6rem 1.25rem;font-size:.9rem;color:var(--salt)}
+.burger{display:none;width:3rem;height:3rem;border:1.5px solid var(--line);border-radius:50%;background:transparent;color:var(--plum);cursor:pointer;place-items:center}
+
+/* ============ HERO ============ */
+.hero{position:relative;padding:clamp(2rem,5vw,4.5rem) 0 clamp(3.5rem,7vw,6rem);overflow:hidden}
+.hero::before{ /* alone caldo */
+  content:"";position:absolute;width:60vw;height:60vw;max-width:820px;max-height:820px;right:-14vw;top:-12vw;border-radius:50%;
+  background:radial-gradient(closest-side, rgba(233,184,166,.55), rgba(233,184,166,0));
+  pointer-events:none;
+}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(2rem,5vw,5rem);align-items:center;position:relative}
+.hero h1{font-size:clamp(2.7rem,6.2vw,5.3rem);margin:1.4rem 0 1.6rem;color:var(--plum)}
+.hero h1 em{display:inline-block;position:relative}
+.hero h1 em svg{position:absolute;left:0;bottom:-.18em;width:100%;height:.28em;overflow:visible}
+.hero h1 em path{stroke:var(--rose-2);stroke-width:3;fill:none;stroke-linecap:round;stroke-dasharray:260;stroke-dashoffset:260;animation:draw 1.4s .5s var(--ease) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.lead{font-size:clamp(1.05rem,1.6vw,1.22rem);color:var(--muted);max-width:34rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.2rem}
+.hero-facts{
+  display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;margin:2.6rem 0 0;padding:1.4rem 0 0;list-style:none;border-top:1px solid var(--line);
+  font-size:.9rem;color:var(--muted);
+}
+.hero-facts li{display:flex;align-items:center;gap:.5rem}
+.hero-facts .icon{color:var(--rose-deep)}
+
+.arch-stage{position:relative;aspect-ratio:4/5;max-width:520px;margin-inline:auto;width:100%}
+.arch-stage svg.arch{width:100%;height:100%;filter:drop-shadow(0 40px 50px rgba(59,31,43,.28))}
+.glow{animation:pulse 6s ease-in-out infinite;transform-origin:240px 250px}
+@keyframes pulse{0%,100%{opacity:.85;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+.grain{animation:float 9s ease-in-out infinite}
+.grain:nth-of-type(2n){animation-duration:11s;animation-delay:-3s}
+.grain:nth-of-type(3n){animation-duration:13s;animation-delay:-6s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.tag{
+  position:absolute;display:flex;align-items:center;gap:.65rem;background:var(--salt);border-radius:999px;padding:.6rem 1.1rem .6rem .7rem;
+  font-size:.84rem;font-weight:600;color:var(--plum);box-shadow:var(--shadow-1);
+}
+.tag .dot{width:2rem;height:2rem;border-radius:50%;display:grid;place-items:center;background:var(--plum);color:var(--rose)}
+.tag .dot .icon{width:1rem;height:1rem}
+.tag-a{left:-6%;top:22%;animation:float 8s ease-in-out infinite}
+.tag-b{right:-5%;bottom:20%;animation:float 10s -4s ease-in-out infinite}
+
+/* ============ MARQUEE ============ */
+.marquee{background:var(--plum);color:var(--rose);overflow:hidden;white-space:nowrap;padding:1rem 0;border-block:1px solid rgba(255,255,255,.08)}
+.marquee-track{display:inline-flex;gap:2.5rem;animation:slide 38s linear infinite;padding-right:2.5rem}
+.marquee span{font-family:var(--ff-display);font-style:italic;font-size:1.35rem;display:inline-flex;align-items:center;gap:2.5rem}
+.marquee span::after{content:"";width:.55rem;height:.55rem;background:var(--gold);transform:rotate(45deg)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ============ SECTIONS ============ */
+section{padding:clamp(4rem,9vw,7.5rem) 0;position:relative}
+.sec-head{max-width:46rem;margin-bottom:clamp(2rem,5vw,3.5rem)}
+.sec-head h2{font-size:clamp(2.1rem,4.4vw,3.5rem);margin:1.1rem 0 1.1rem;color:var(--plum)}
+.sec-head p{color:var(--muted);font-size:1.1rem}
+
+/* --- servizi (tabs) --- */
+.svc{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(1.5rem,4vw,4rem);align-items:start}
+.tablist{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.tab{
+  display:flex;align-items:baseline;gap:1.2rem;text-align:left;width:100%;
+  padding:1.15rem .4rem;background:none;border:0;border-bottom:1px solid var(--line);cursor:pointer;
+  font-family:var(--ff-display);font-size:clamp(1.5rem,2.6vw,2.15rem);color:var(--muted);
+  transition:color .3s var(--ease), padding .3s var(--ease);
+}
+.tab span{font:600 .75rem/1 var(--ff-body);letter-spacing:.14em;color:var(--rose-deep);min-width:1.8rem}
+.tab:hover{color:var(--plum)}
+.tab[aria-selected="true"]{color:var(--plum);padding-left:1.2rem;font-style:italic;background:linear-gradient(90deg,rgba(233,184,166,.35),transparent)}
+.panel{
+  background:var(--salt-2);border-radius:var(--r-lg);padding:clamp(1.6rem,3.5vw,3rem);position:relative;overflow:hidden;
+  min-height:25rem;box-shadow:var(--shadow-1);
+}
+.panel::after{ /* arco decorativo */
+  content:"";position:absolute;right:-3.5rem;bottom:-3.5rem;width:15rem;height:20rem;border-radius:8rem 8rem 0 0;
+  border:1.5px solid rgba(180,86,74,.28);box-shadow:inset 0 0 0 14px var(--salt-2), inset 0 0 0 15px rgba(180,86,74,.18);
+  pointer-events:none;
+}
+.panel[hidden]{display:none}
+.panel .p-icon{width:3.4rem;height:3.4rem;border-radius:50%;background:var(--plum);color:var(--rose);display:grid;place-items:center;margin-bottom:1.6rem}
+.panel .p-icon .icon{width:1.5rem;height:1.5rem}
+.panel h3{font-size:clamp(1.8rem,3vw,2.5rem);color:var(--plum);margin-bottom:.9rem}
+.panel p{color:var(--muted);max-width:32rem}
+.panel ul{list-style:none;margin:1.6rem 0 2rem;padding:0;display:grid;gap:.7rem;position:relative;z-index:1}
+.panel li{display:flex;gap:.8rem;align-items:flex-start;font-weight:500}
+.panel li::before{content:"";flex:none;width:.5rem;height:.5rem;margin-top:.62rem;background:var(--rose-deep);transform:rotate(45deg)}
+.panel .btn{position:relative;z-index:1}
+.panel.in{animation:panelIn .5s var(--ease)}
+@keyframes panelIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* --- grotta --- */
+.cave{background:var(--plum);color:var(--salt);padding-top:clamp(6rem,11vw,9rem);margin-top:3rem}
+.cave::before{ /* bordo frastagliato a cristalli */
+  content:"";position:absolute;left:0;right:0;top:-1px;height:70px;background:var(--salt);
+  clip-path:polygon(0 0,100% 0,100% 20%,96% 70%,92% 25%,88% 90%,83% 30%,78% 75%,73% 20%,67% 95%,62% 35%,57% 80%,51% 15%,46% 70%,40% 30%,35% 90%,29% 25%,24% 75%,18% 20%,13% 85%,8% 30%,4% 70%,0 25%);
+}
+.cave::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(60% 50% at 80% 40%, rgba(233,184,166,.18), transparent 70%)}
+.cave .eyebrow{color:var(--rose)}
+.cave h2{color:var(--salt)}
+.cave h2 em{color:var(--rose)}
+.cave .sec-head p{color:rgba(251,247,242,.78)}
+.cave-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:center;position:relative;z-index:1}
+.breath{display:flex;flex-direction:column;align-items:center;gap:1.8rem}
+.breath-orb{position:relative;width:min(78vw,22rem);aspect-ratio:1;display:grid;place-items:center}
+.breath-orb .ring{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(233,184,166,.35)}
+.breath-orb .ring:nth-child(2){inset:9%}
+.breath-orb .ring:nth-child(3){inset:18%;border-color:rgba(233,184,166,.2)}
+.breath-core{
+  position:absolute;inset:26%;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%, #FFE9D2, var(--rose) 55%, var(--rose-2));
+  box-shadow:0 0 70px 10px rgba(233,184,166,.45);
+  transform:scale(.72);transition:transform 4s ease-in-out;
+}
+.breath.inhale .breath-core{transform:scale(1.18);transition-duration:4s}
+.breath.exhale .breath-core{transform:scale(.72);transition-duration:6s}
+.breath-label{font-family:var(--ff-display);font-style:italic;font-size:1.7rem;color:var(--rose);min-height:2.2rem;text-align:center;margin-top:-.6rem}
+.breath-hint{font-size:.9rem;color:rgba(251,247,242,.7);text-align:center;max-width:22rem}
+.cave-list{list-style:none;margin:2rem 0 2.2rem;padding:0;display:grid;gap:1.2rem}
+.cave-list li{display:grid;grid-template-columns:2.8rem 1fr;gap:1rem;align-items:start}
+.cave-list .ci{width:2.8rem;height:2.8rem;border-radius:50%;border:1px solid rgba(233,184,166,.5);display:grid;place-items:center;color:var(--rose)}
+.cave-list strong{display:block;font-family:var(--ff-display);font-weight:500;font-size:1.25rem;margin-bottom:.15rem}
+.cave-list span{color:rgba(251,247,242,.75);font-size:.98rem}
+.fineprint{font-size:.8rem;color:rgba(251,247,242,.62);max-width:30rem}
+
+/* --- percorso --- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;counter-reset:s}
+.step{
+  background:#fff;border-radius:var(--r-md);padding:2rem 1.8rem 2.2rem;box-shadow:var(--shadow-1);position:relative;
+  border:1px solid var(--line);transition:transform .4s var(--ease), box-shadow .4s var(--ease);
+}
+.step:hover{transform:translateY(-6px);box-shadow:var(--shadow-2)}
+.step:nth-child(2){margin-top:2.2rem}
+.step:nth-child(3){margin-top:4.4rem}
+.step::before{
+  counter-increment:s;content:"0" counter(s);
+  font-family:var(--ff-display);font-style:italic;font-size:3.6rem;line-height:1;color:var(--rose);display:block;margin-bottom:1rem;
+}
+.step h3{font-size:1.6rem;color:var(--plum);margin-bottom:.6rem}
+.step p{color:var(--muted);font-size:1rem}
+
+/* --- sposa --- */
+.bride{padding:0 0 clamp(4rem,9vw,7rem)}
+.bride-card{
+  background:linear-gradient(120deg,var(--salt-3),var(--rose) 140%);border-radius:var(--r-lg);
+  display:grid;grid-template-columns:1.2fr .8fr;overflow:hidden;position:relative;
+}
+.bride-copy{padding:clamp(2rem,5vw,4.5rem)}
+.bride-copy h2{font-size:clamp(2rem,4vw,3.2rem);color:var(--plum);margin:1rem 0 1.1rem}
+.bride-copy p{color:#5b4349;margin-bottom:1.8rem;max-width:30rem}
+.bride-art{position:relative;min-height:18rem}
+.bride-art svg{position:absolute;inset:0;width:100%;height:100%}
+
+/* --- contatti --- */
+.contact{background:var(--salt-2)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:start}
+form{background:#fff;border-radius:var(--r-lg);padding:clamp(1.5rem,3.5vw,2.8rem);box-shadow:var(--shadow-2);border:1px solid var(--line)}
+form h3{font-size:1.9rem;color:var(--plum);margin-bottom:.4rem}
+form > p{color:var(--muted);font-size:.95rem;margin-bottom:1.6rem}
+.field{display:grid;gap:.4rem;margin-bottom:1.1rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+label,legend{font-size:.86rem;font-weight:600;color:var(--plum)}
+input,select,textarea{
+  font:inherit;font-size:1rem;color:var(--ink);background:var(--salt);border:1.5px solid var(--salt-3);border-radius:var(--r-sm);
+  padding:.85rem 1rem;min-height:3rem;width:100%;transition:border-color .2s, box-shadow .2s;
+}
+textarea{resize:vertical;min-height:5.5rem}
+input:hover,select:hover,textarea:hover{border-color:var(--rose-2)}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:none;border-color:var(--rose-deep);box-shadow:0 0 0 4px rgba(180,86,74,.18)}
+.slots{display:flex;gap:.6rem;border:0;padding:0;margin:0 0 1.2rem}
+.slot{flex:1;position:relative}
+.slot input{position:absolute;opacity:0;inset:0;cursor:pointer;min-height:0}
+.slot span{display:block;text-align:center;padding:.8rem .5rem;border-radius:var(--r-sm);border:1.5px solid var(--salt-3);background:var(--salt);font-weight:500;font-size:.95rem;transition:all .2s}
+.slot input:checked + span{background:var(--plum);border-color:var(--plum);color:var(--salt)}
+.slot input:focus-visible + span{outline:3px solid var(--rose-deep);outline-offset:2px}
+.err{color:#b3261e;font-size:.84rem;font-weight:500;min-height:0}
+input[aria-invalid="true"]{border-color:#b3261e}
+.form-actions{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center;margin-top:.6rem}
+.form-actions .btn{flex:1 1 14rem}
+.form-note{font-size:.8rem;color:var(--muted);margin-top:1rem}
+
+.info{display:grid;gap:1.8rem}
+.info-item{display:grid;grid-template-columns:3rem 1fr;gap:1rem}
+.info-item .ii{width:3rem;height:3rem;border-radius:50%;background:var(--plum);color:var(--rose);display:grid;place-items:center}
+.info-item h3{font-family:var(--ff-body);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--rose-deep);margin-bottom:.25rem;font-weight:600}
+.info-item p,.info-item a{font-size:1.1rem;color:var(--plum);font-weight:500;text-decoration:none}
+.info-item a:hover{text-decoration:underline;text-underline-offset:4px}
+.info-item small{display:block;color:var(--muted);font-size:.88rem;font-weight:400;margin-top:.15rem}
+.map{border-radius:var(--r-md);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-1);aspect-ratio:16/10;background:var(--salt-3)}
+.map iframe{width:100%;height:100%;border:0;filter:saturate(.8) sepia(.12)}
+
+/* ============ FOOTER ============ */
+footer{background:var(--ink);color:rgba(251,247,242,.75);padding:3.5rem 0 7rem;font-size:.92rem}
+.foot{display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:flex-start}
+footer .logo-text strong{color:var(--salt)}
+footer .logo-text small{color:rgba(251,247,242,.55)}
+footer a{text-decoration:none}
+footer a:hover{color:var(--rose)}
+.foot-links{display:flex;gap:1.5rem;flex-wrap:wrap}
+.foot-bottom{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.12);font-size:.8rem;color:rgba(251,247,242,.5)}
+
+/* ============ STICKY MOBILE CTA ============ */
+.dock{
+  position:fixed;left:.75rem;right:.75rem;bottom:calc(.75rem + env(safe-area-inset-bottom));z-index:60;display:none;gap:.6rem;
+  background:rgba(59,31,43,.94);backdrop-filter:blur(10px);padding:.5rem;border-radius:999px;box-shadow:0 18px 40px -10px rgba(0,0,0,.45);
+}
+.dock .btn{flex:1;min-height:3rem;padding:.6rem 1rem}
+.dock .btn-ghost{border-color:rgba(251,247,242,.5);color:var(--salt)}
+
+/* ============ REVEAL ============ */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease), transform .9s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+.js .reveal[data-d="1"]{transition-delay:.1s}
+.js .reveal[data-d="2"]{transition-delay:.2s}
+.js .reveal[data-d="3"]{transition-delay:.3s}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:960px){
+  .hero-grid,.cave-grid,.contact-grid,.bride-card{grid-template-columns:1fr}
+  .svc{grid-template-columns:1fr}
+  .tablist{flex-direction:row;overflow-x:auto;border:0;gap:.6rem;padding-bottom:.6rem;scroll-snap-type:x proximity;scrollbar-width:thin}
+  .tab{width:auto;white-space:nowrap;border:1.5px solid var(--line);border-radius:999px;padding:.7rem 1.2rem;font-size:1.15rem;scroll-snap-align:start;gap:.6rem;min-height:3rem}
+  .tab[aria-selected="true"]{padding-left:1.2rem;background:var(--plum);color:var(--salt);border-color:var(--plum)}
+  .tab[aria-selected="true"] span{color:var(--rose)}
+  .steps{grid-template-columns:1fr}
+  .step:nth-child(2),.step:nth-child(3){margin-top:0}
+  .arch-stage{max-width:380px}
+  .tag-a{left:-2%}.tag-b{right:-2%}
+  .bride-art{min-height:14rem;order:-1}
+  .menu{
+    position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:var(--salt);
+    padding:.5rem 1.25rem 1.5rem;border-bottom:1px solid var(--line);box-shadow:0 30px 40px -20px rgba(59,31,43,.25);
+    display:none;
+  }
+  .menu.open{display:flex}
+  .menu li a:not(.btn){display:block;padding:1rem .2rem;border-bottom:1px solid var(--line);font-size:1.05rem}
+  .menu li:last-child{margin-top:1rem}
+  .burger{display:grid}
+  .dock{display:flex}
+}
+@media (max-width:560px){
+  .row{grid-template-columns:1fr}
+  .slots{flex-direction:column}
+  .logo-text small{display:none}
+  .hero-cta .btn{flex:1 1 100%}
+  .draft-bar{font-size:.75rem}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+  .js .reveal{opacity:1;transform:none}
+  .hero h1 em path{stroke-dashoffset:0}
+  .marquee-track{animation:none}
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Vai al contenuto</a>
+
+<!-- Sprite icone (stile unico: linea 1.5) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-face" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></symbol>
+  <symbol id="i-body" viewBox="0 0 24 24"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+  <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9zM11 3 8 9l4 13 4-13-3-6M2 9h20"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0L14.06 8.5a2 2 0 0 0 1.44 1.44l6.14 1.58a.5.5 0 0 1 0 .96L15.5 14.06a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+  <symbol id="i-wind" viewBox="0 0 24 24"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2M9.6 4.6A2 2 0 1 1 11 8H2M12.6 19.4A2 2 0 1 0 14 16H2"/></symbol>
+  <symbol id="i-feather" viewBox="0 0 24 24"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5zM16 8 2 22M17.5 15H9"/></symbol>
+</svg>
+
+<div class="draft-bar" id="draftBar" role="note">
+  <span><b>Anteprima di progetto</b> · bozza del nuovo sito di MAYA &mdash; testi, orari e foto sono segnaposto da confermare insieme.</span>
+  <button type="button" aria-label="Nascondi avviso bozza" onclick="document.getElementById('draftBar').remove()"><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg></button>
+</div>
+
+<header class="site-header" id="top">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="MAYA Estetica Benessere e Grotta del Sale — torna in alto">
+      <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M6 44V22a18 18 0 0 1 36 0v22z" fill="#3B1F2B"/>
+        <path d="M13 44V23a11 11 0 0 1 22 0v21z" fill="none" stroke="#E9B8A6" stroke-width="1.4"/>
+        <path d="M16 44l5-13 5 13M24 44l5-9 5 9" fill="#E9B8A6"/>
+        <circle cx="24" cy="21" r="3.6" fill="#FFE9D2"/>
+      </svg>
+      <span class="logo-text"><strong>MAYA</strong><small>Estetica · Benessere · Grotta del Sale</small></span>
+    </a>
+
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Apri il menu">
+      <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+    </button>
+
+    <ul class="menu" id="menu">
+      <li><a href="#trattamenti">Trattamenti</a></li>
+      <li><a href="#grotta">Grotta del sale</a></li>
+      <li><a href="#percorso">Il tuo percorso</a></li>
+      <li><a href="#sposa">Sposa</a></li>
+      <li><a href="#contatti">Dove siamo</a></li>
+      <li><a class="btn btn-primary" href="#prenota">Richiedi appuntamento</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow reveal">Torino · Santa Rita</span>
+      <h1 id="h1" class="reveal" data-d="1">Un luogo dove <span style="white-space:nowrap"><em>rallentare<svg viewBox="0 0 260 14" preserveAspectRatio="none" aria-hidden="true"><path d="M3 9c40-8 80 4 126-1s90-4 128 0"/></svg></em>,</span> e stare&nbsp;bene.</h1>
+      <p class="lead reveal" data-d="2">Estetica avanzata, nails, epilazione laser e una grotta del sale da vivere in silenzio. Da MAYA ogni percorso parte da una cosa sola: <strong>ascoltare te</strong>.</p>
+      <div class="hero-cta reveal" data-d="3">
+        <a class="btn btn-primary" href="#prenota">Richiedi un appuntamento <svg class="icon icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="tel:+393462192901"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> 346 219 2901</a>
+      </div>
+      <ul class="hero-facts reveal" data-d="3">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Via Monginevro 174/d</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg> Estetica viso &amp; corpo</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg> Laser a diodo 808</li>
+      </ul>
+    </div>
+
+    <div class="arch-stage reveal" data-d="2">
+      <svg class="arch" viewBox="0 0 480 600" role="img" aria-label="Illustrazione di un arco con una lampada di sale accesa e cristalli rosa">
+        <defs>
+          <clipPath id="archClip"><path d="M30 600V240a210 210 0 0 1 420 0v360z"/></clipPath>
+          <linearGradient id="gSky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#F9E4D8"/><stop offset=".55" stop-color="#EFC3B1"/><stop offset="1" stop-color="#D9917F"/>
+          </linearGradient>
+          <radialGradient id="gLamp" cx=".5" cy=".5" r=".5">
+            <stop offset="0" stop-color="#FFF4E2"/><stop offset=".4" stop-color="#FFD9B5" stop-opacity=".85"/><stop offset="1" stop-color="#FFD9B5" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="gC1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F7CBB9"/><stop offset="1" stop-color="#B4564A"/></linearGradient>
+          <linearGradient id="gC2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E9B8A6"/><stop offset="1" stop-color="#8E3F46"/></linearGradient>
+          <linearGradient id="gC3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBE3D6"/><stop offset="1" stop-color="#D9917F"/></linearGradient>
+        </defs>
+        <!-- arco di profondità -->
+        <path d="M6 600V240a234 234 0 0 1 468 0v360z" fill="none" stroke="#3B1F2B" stroke-opacity=".25" stroke-width="1.5"/>
+        <path d="M18 600V240a222 222 0 0 1 444 0v360z" fill="none" stroke="#B4564A" stroke-opacity=".35" stroke-width="1.5"/>
+        <g clip-path="url(#archClip)">
+          <rect width="480" height="600" fill="url(#gSky)"/>
+          <!-- lampada di sale -->
+          <circle class="glow" cx="240" cy="250" r="150" fill="url(#gLamp)"/>
+          <circle cx="240" cy="250" r="46" fill="#FFF1DD"/>
+          <circle cx="240" cy="250" r="46" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="1.5"/>
+          <!-- onde di sabbia/sale -->
+          <path d="M0 470c60-30 120-38 180-18s130 38 300-24V600H0z" fill="#3B1F2B" fill-opacity=".14"/>
+          <!-- cristalli -->
+          <g>
+            <polygon points="40,600 88,470 140,600" fill="url(#gC2)"/>
+            <polygon points="88,470 112,600 140,600" fill="#fff" fill-opacity=".18"/>
+            <polygon points="110,600 172,410 236,600" fill="url(#gC1)"/>
+            <polygon points="172,410 200,600 236,600" fill="#fff" fill-opacity=".2"/>
+            <polygon points="214,600 262,468 312,600" fill="url(#gC3)"/>
+            <polygon points="262,468 284,600 312,600" fill="#fff" fill-opacity=".25"/>
+            <polygon points="276,600 342,392 410,600" fill="url(#gC2)"/>
+            <polygon points="342,392 372,600 410,600" fill="#fff" fill-opacity=".16"/>
+            <polygon points="372,600 416,488 470,600" fill="url(#gC1)"/>
+            <polygon points="416,488 440,600 470,600" fill="#fff" fill-opacity=".2"/>
+          </g>
+          <!-- granelli sospesi -->
+          <g fill="#fff" fill-opacity=".85">
+            <circle class="grain" cx="96" cy="190" r="3"/>
+            <circle class="grain" cx="380" cy="150" r="2.4"/>
+            <circle class="grain" cx="130" cy="330" r="2"/>
+            <circle class="grain" cx="352" cy="300" r="3.2"/>
+            <circle class="grain" cx="260" cy="110" r="2"/>
+            <circle class="grain" cx="60" cy="400" r="2.4"/>
+            <circle class="grain" cx="420" cy="380" r="2"/>
+          </g>
+        </g>
+      </svg>
+      <div class="tag tag-a"><span class="dot"><svg class="icon" aria-hidden="true"><use href="#i-gem"/></svg></span>Grotta del sale</div>
+      <div class="tag tag-b"><span class="dot"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg></span>Beauty &amp; nails</div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Pulizia viso profonda</span><span>Dermaplaning</span><span>Pressoterapia</span><span>Laser a diodo 808</span><span>Ricostruzione unghie</span><span>Swiss Pedicure</span><span>Massaggi olistici</span><span>Percorsi sposa</span><span>Grotta del sale</span>
+    <span>Pulizia viso profonda</span><span>Dermaplaning</span><span>Pressoterapia</span><span>Laser a diodo 808</span><span>Ricostruzione unghie</span><span>Swiss Pedicure</span><span>Massaggi olistici</span><span>Percorsi sposa</span><span>Grotta del sale</span>
+  </div>
+</div>
+
+<!-- ============ TRATTAMENTI ============ -->
+<section id="trattamenti" aria-labelledby="t-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">I trattamenti</span>
+      <h2 id="t-title">Sei mondi, <em>un solo</em> indirizzo.</h2>
+      <p>Scegli da dove iniziare: ogni percorso viene costruito sulla tua pelle, sui tuoi tempi e sulle tue abitudini.</p>
+    </div>
+
+    <div class="svc reveal">
+      <div class="tablist" role="tablist" aria-label="Categorie di trattamenti" aria-orientation="vertical">
+        <button class="tab" role="tab" id="tab-viso" aria-controls="p-viso" aria-selected="true"><span>01</span>Viso</button>
+        <button class="tab" role="tab" id="tab-corpo" aria-controls="p-corpo" aria-selected="false" tabindex="-1"><span>02</span>Corpo</button>
+        <button class="tab" role="tab" id="tab-nails" aria-controls="p-nails" aria-selected="false" tabindex="-1"><span>03</span>Mani &amp; piedi</button>
+        <button class="tab" role="tab" id="tab-epil" aria-controls="p-epil" aria-selected="false" tabindex="-1"><span>04</span>Epilazione</button>
+        <button class="tab" role="tab" id="tab-sposa" aria-controls="p-sposa" aria-selected="false" tabindex="-1"><span>05</span>Sposa</button>
+        <button class="tab" role="tab" id="tab-grotta" aria-controls="p-grotta" aria-selected="false" tabindex="-1"><span>06</span>Grotta del sale</button>
+      </div>
+
+      <div class="panels">
+        <article class="panel" role="tabpanel" id="p-viso" aria-labelledby="tab-viso" tabindex="0" data-service="Trattamento viso">
+          <div class="p-icon"><svg class="icon" aria-hidden="true"><use href="#i-face"/></svg></div>
+          <h3>Pelle che si vede<br>(e si sente).</h3>
+          <p>Dalla pulizia profonda ai trattamenti mirati: partiamo dall'analisi della tua pelle per scegliere solo ciò che serve davvero.</p>
+          <ul>
+            <li>Pulizia del viso profonda</li>
+            <li>Trattamenti anti-age e antimacchia</li>
+            <li>Microdermoabrasione e dermaplaning</li>
+            <li>Protocolli personalizzati</li>
+          </ul>
+          <a class="btn btn-primary" href="#prenota" data-pick="Trattamento viso">Prenota il viso <svg class="icon icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="panel" role="tabpanel" id="p-corpo" aria-labelledby="tab-corpo" tabindex="0" hidden data-service="Trattamento corpo">
+          <div class="p-icon"><svg class="icon" aria-hidden="true"><use href="#i-body"/></svg></div>
+          <h3>Il corpo ha<br>le sue ragioni.</h3>
+          <p>Massaggi che sciolgono, trattamenti che rimodellano, tecnologie che drenano. Ognuno con un obiettivo chiaro.</p>
+          <ul>
+            <li>Massaggi rilassanti e olistici</li>
+            <li>Trattamenti corpo rimodellanti</li>
+            <li>Pressoterapia corpo e occhi</li>
+            <li>Percorsi dedicati nel tempo</li>
+          </ul>
+          <a class="btn btn-primary" href="#prenota" data-pick="Trattamento corpo">Prenota il corpo <svg class="icon icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="panel" role="tabpanel" id="p-nails" aria-labelledby="tab-nails" tabindex="0" hidden data-service="Mani e piedi / nails">
+          <div class="p-icon"><svg class="icon" aria-hidden="true"><use href="#i-drop"/></svg></div>
+          <h3>Dettagli che<br>fanno la differenza.</h3>
+          <p>Mani curate e piedi leggeri, con tecniche precise e prodotti selezionati. Dal semplice smalto alla ricostruzione.</p>
+          <ul>
+            <li>Manicure e smalto semipermanente</li>
+            <li>Ricostruzione unghie in gel e acrilico</li>
+            <li>Swiss Pedicure System</li>
+            <li>Cura specifica del piede</li>
+          </ul>
+          <a class="btn btn-primary" href="#prenota" data-pick="Mani e piedi / nails">Prenota le nails <svg class="icon icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="panel" role="tabpanel" id="p-epil" aria-labelledby="tab-epil" tabindex="0" hidden data-service="Epilazione / laser">
+          <div class="p-icon"><svg class="icon" aria-hidden="true"><use href="#i-zap"/></svg></div>
+          <h3>Pelle liscia,<br>senza pensieri.</h3>
+          <p>Dalla cera tradizionale al laser a diodo 808, la soluzione giusta per te, con un percorso chiaro e programmato.</p>
+          <ul>
+            <li>Epilazione con cera</li>
+            <li>Laser a diodo 808</li>
+            <li>Valutazione iniziale della pelle</li>
+            <li>Cicli programmati</li>
+          </ul>
+          <a class="btn btn-primary" href="#prenota" data-pick="Epilazione / laser">Prenota l'epilazione <svg class="icon icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="panel" role="tabpanel" id="p-sposa" aria-labelledby="tab-sposa" tabindex="0" hidden data-service="Percorso sposa">
+          <div class="p-icon"><svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg></div>
+          <h3>Arrivare al sì<br>serene e luminose.</h3>
+          <p>Pacchetti pensati per sposi e invitati, con un programma di preparazione che parte per tempo: viso, corpo e unghie.</p>
+          <ul>
+            <li>Programma di preparazione su misura</li>
+            <li>Viso, corpo e mani curati nel tempo</li>
+            <li>Pacchetti anche per gli invitati</li>
+            <li>Consulenza dedicata</li>
+          </ul>
+          <a class="btn btn-primary" href="#prenota" data-pick="Percorso sposa">Parliamone <svg class="icon icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+
+        <article class="panel" role="tabpanel" id="p-grotta" aria-labelledby="tab-grotta" tabindex="0" hidden data-service="Grotta del sale">
+          <div class="p-icon"><svg class="icon" aria-hidden="true"><use href="#i-gem"/></svg></div>
+          <h3>Mezz'ora di<br>silenzio, col sale.</h3>
+          <p>Una stanza rivestita di sale, luce calda e nessuna fretta. Un tempo solo tuo, da regalarti o da regalare.</p>
+          <ul>
+            <li>Sessioni di relax guidato</li>
+            <li>Ambiente caldo e silenzioso</li>
+            <li>Da abbinare a un trattamento</li>
+          </ul>
+          <a class="btn btn-primary" href="#prenota" data-pick="Grotta del sale">Prenota la grotta <svg class="icon icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GROTTA DEL SALE ============ -->
+<section class="cave" id="grotta" aria-labelledby="g-title">
+  <div class="wrap cave-grid">
+    <div>
+      <div class="sec-head reveal" style="margin-bottom:0">
+        <span class="eyebrow">La grotta del sale</span>
+        <h2 id="g-title">Qui il tempo <em>si ferma</em> per un po'.</h2>
+        <p>Dimentica notifiche e agenda. Entri, ti siedi, respiri. Il resto lo fa l'ambiente: luce bassa, sale alle pareti, silenzio.</p>
+      </div>
+      <ul class="cave-list reveal" data-d="1">
+        <li><span class="ci"><svg class="icon" aria-hidden="true"><use href="#i-moon"/></svg></span><div><strong>Atmosfera ovattata</strong><span>Luci soffuse e superfici di sale: un angolo di quiete a pochi passi dal traffico.</span></div></li>
+        <li><span class="ci"><svg class="icon" aria-hidden="true"><use href="#i-wind"/></svg></span><div><strong>Respiro lento</strong><span>Un invito a rallentare il ritmo, ritrovare calma e leggerezza.</span></div></li>
+        <li><span class="ci"><svg class="icon" aria-hidden="true"><use href="#i-feather"/></svg></span><div><strong>Perfetta con un trattamento</strong><span>Prima o dopo un massaggio o un viso, per completare il momento.</span></div></li>
+      </ul>
+      <a class="btn btn-light reveal" data-d="2" href="#prenota" data-pick="Grotta del sale">Prenota una sessione <svg class="icon icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <p class="fineprint reveal" data-d="3" style="margin-top:1.6rem">La grotta del sale è un'esperienza di benessere e relax, non una terapia né un trattamento medico.</p>
+    </div>
+
+    <div class="breath reveal" id="breath" data-d="2">
+      <div class="breath-orb">
+        <span class="ring"></span><span class="ring"></span><span class="ring"></span>
+        <span class="breath-core"></span>
+      </div>
+      <p class="breath-label" id="breathLabel" aria-live="polite">Prova qui</p>
+      <button class="btn btn-light" id="breathBtn" type="button" aria-pressed="false">Respira con noi (30 sec)</button>
+      <p class="breath-hint">Un piccolo assaggio: inspira per 4 secondi, espira per 6. Segui il cerchio.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PERCORSO ============ -->
+<section id="percorso" aria-labelledby="s-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Il tuo percorso</span>
+      <h2 id="s-title">Niente di standard.<br><em>Tutto</em> su misura.</h2>
+    </div>
+    <div class="steps">
+      <article class="step reveal"><h3>Ti ascoltiamo</h3><p>Una chiacchierata, un'analisi della pelle, le tue abitudini e i tuoi obiettivi. Si parte sempre da qui.</p></article>
+      <article class="step reveal" data-d="1"><h3>Costruiamo il piano</h3><p>Scegliamo insieme trattamenti, tecnologie e tempi. Spieghiamo cosa facciamo e perché, senza giri di parole.</p></article>
+      <article class="step reveal" data-d="2"><h3>Ti seguiamo nel tempo</h3><p>I risultati si costruiscono con costanza: controlliamo l'andamento e aggiustiamo il percorso quando serve.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPOSA ============ -->
+<section class="bride" id="sposa" aria-labelledby="b-title">
+  <div class="wrap">
+    <div class="bride-card reveal">
+      <div class="bride-copy">
+        <span class="eyebrow">Percorsi sposa</span>
+        <h2 id="b-title">Il giorno più bello merita <em>mesi</em> di cura.</h2>
+        <p>Viso, corpo, mani: un programma che parte per tempo e arriva al giorno del matrimonio con pelle radiosa e zero ansie. Pacchetti anche per testimoni e invitate.</p>
+        <a class="btn btn-primary" href="#prenota" data-pick="Percorso sposa">Chiedi il tuo programma <svg class="icon icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="bride-art" aria-hidden="true">
+        <svg viewBox="0 0 400 420" preserveAspectRatio="xMidYMid slice">
+          <!-- due fedi intrecciate -->
+          <circle cx="165" cy="215" r="105" fill="none" stroke="#B4564A" stroke-opacity=".55" stroke-width="2"/>
+          <circle cx="165" cy="215" r="93" fill="none" stroke="#B4564A" stroke-opacity=".25" stroke-width="1.5"/>
+          <circle cx="245" cy="215" r="105" fill="none" stroke="#3B1F2B" stroke-opacity=".5" stroke-width="2"/>
+          <circle cx="245" cy="215" r="93" fill="none" stroke="#3B1F2B" stroke-opacity=".22" stroke-width="1.5"/>
+          <!-- gemma -->
+          <g transform="translate(205 92)">
+            <polygon points="-22,0 22,0 34,-16 0,-40 -34,-16" fill="#FFF1DD" stroke="#3B1F2B" stroke-opacity=".6" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M-34,-16h68M-12,-16 0,0 12,-16M0,-40v24" fill="none" stroke="#3B1F2B" stroke-opacity=".4" stroke-width="1.2"/>
+          </g>
+          <g fill="#fff" fill-opacity=".9"><circle cx="70" cy="90" r="3"/><circle cx="340" cy="320" r="3"/><circle cx="330" cy="80" r="2"/><circle cx="60" cy="340" r="2.4"/></g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRENOTA + CONTATTI ============ -->
+<section class="contact" id="prenota" aria-labelledby="c-title">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Prenota</span>
+      <h2 id="c-title">Dicci quando, <em>al resto</em> pensiamo noi.</h2>
+      <p>Compila la richiesta: si apre WhatsApp con il messaggio già pronto. Ti rispondiamo per confermare giorno e orario.</p>
+    </div>
+
+    <div class="contact-grid" id="contatti">
+      <form id="bookForm" class="reveal" novalidate>
+        <h3>Richiedi un appuntamento</h3>
+        <p>Ci vuole meno di un minuto.</p>
+
+        <div class="field">
+          <label for="name">Il tuo nome</label>
+          <input id="name" name="name" type="text" autocomplete="given-name" required aria-describedby="nameErr">
+          <span class="err" id="nameErr" role="alert"></span>
+        </div>
+
+        <div class="field">
+          <label for="service">Cosa ti interessa?</label>
+          <select id="service" name="service">
+            <option>Trattamento viso</option>
+            <option>Trattamento corpo</option>
+            <option>Mani e piedi / nails</option>
+            <option>Epilazione / laser</option>
+            <option>Percorso sposa</option>
+            <option>Grotta del sale</option>
+            <option>Non so, vorrei un consiglio</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label for="day">Giorno preferito</label>
+            <select id="day" name="day">
+              <option>Lunedì</option><option>Martedì</option><option>Mercoledì</option><option>Giovedì</option><option>Venerdì</option><option>Sono flessibile</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="phone">Telefono (facoltativo)</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
+          </div>
+        </div>
+
+        <fieldset class="slots">
+          <legend class="sr-only">Fascia oraria preferita</legend>
+          <label class="slot"><input type="radio" name="slot" value="mattina" checked><span>Mattina</span></label>
+          <label class="slot"><input type="radio" name="slot" value="pomeriggio"><span>Pomeriggio</span></label>
+          <label class="slot"><input type="radio" name="slot" value="indifferente"><span>Indifferente</span></label>
+        </fieldset>
+
+        <div class="field">
+          <label for="note">Note (facoltative)</label>
+          <textarea id="note" name="note" rows="3" placeholder="Allergie, un'occasione speciale, domande…"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn-rose" type="submit"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg> Invia su WhatsApp</button>
+          <a class="btn btn-ghost" href="tel:+393462192901"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Preferisco chiamare</a>
+        </div>
+        <p class="form-note">Nessun dato viene salvato sul sito: il messaggio parte direttamente dal tuo WhatsApp.</p>
+      </form>
+
+      <div class="info reveal" data-d="1">
+        <div class="info-item">
+          <span class="ii"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span>
+          <div><h3>Dove</h3><p>Via Monginevro, 174/d<br>10141 Torino (TO)</p><small>Bus fermata «Sacra San Michele» a un minuto a piedi</small></div>
+        </div>
+        <div class="info-item">
+          <span class="ii"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span>
+          <div><h3>Telefono &amp; WhatsApp</h3><a href="tel:+393462192901">346 219 2901</a></div>
+        </div>
+        <div class="info-item">
+          <span class="ii"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></span>
+          <div><h3>Orari</h3><p>Su appuntamento</p><small>[ da inserire: orari di apertura confermati dal centro ]</small></div>
+        </div>
+        <div class="map">
+          <iframe title="Mappa: MAYA Estetica Benessere e Grotta del Sale, Via Monginevro 174/d, Torino" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=45.0643971,7.6292719&amp;z=16&amp;output=embed"></iframe>
+        </div>
+        <a class="btn btn-ghost" href="https://www.google.it/maps/place/MAYA+Estetica+Benessere+%26+Grotta+del+Sale/@45.0643971,7.6292719,17z" target="_blank" rel="noopener">Apri in Google Maps <svg class="icon icon-arrow" aria-hidden="true"><use href="#i-arrow"/></svg><span class="sr-only">(si apre in una nuova scheda)</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="logo" style="cursor:default">
+        <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M6 44V22a18 18 0 0 1 36 0v22z" fill="#E9B8A6"/>
+          <path d="M13 44V23a11 11 0 0 1 22 0v21z" fill="none" stroke="#3B1F2B" stroke-width="1.4"/>
+          <path d="M16 44l5-13 5 13M24 44l5-9 5 9" fill="#3B1F2B"/>
+          <circle cx="24" cy="21" r="3.6" fill="#FFE9D2"/>
+        </svg>
+        <span class="logo-text"><strong>MAYA</strong><small>Estetica · Benessere · Grotta del Sale</small></span>
+      </div>
+      <address style="font-style:normal;line-height:1.8">Via Monginevro, 174/d · 10141 Torino<br><a href="tel:+393462192901">346 219 2901</a></address>
+      <nav class="foot-links" aria-label="Link rapidi">
+        <a href="#trattamenti">Trattamenti</a><a href="#grotta">Grotta del sale</a><a href="#sposa">Sposa</a><a href="#prenota">Prenota</a>
+      </nav>
+    </div>
+    <p class="foot-bottom">© <span id="year">2026</span> MAYA Estetica Benessere &amp; Grotta del Sale · [ P.IVA e note legali da inserire ] · Bozza di progetto, non ancora pubblicata.</p>
+  </div>
+</footer>
+
+<!-- CTA fissa su mobile -->
+<div class="dock" role="group" aria-label="Contatto rapido">
+  <a class="btn btn-ghost" href="tel:+393462192901"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> Chiama</a>
+  <a class="btn btn-rose" href="#prenota"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg> Prenota</a>
+</div>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  const $ = (s, c=document) => c.querySelector(s);
+  const $$ = (s, c=document) => [...c.querySelectorAll(s)];
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* header: bordo allo scroll */
+  const header = $('.site-header');
+  const onScroll = () => header.classList.toggle('scrolled', scrollY > 8);
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* menu mobile */
+  const burger = $('#burger'), menu = $('#menu');
+  const setMenu = open => {
+    menu.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open);
+    burger.setAttribute('aria-label', open ? 'Chiudi il menu' : 'Apri il menu');
+    burger.firstElementChild.firstElementChild.setAttribute('href', open ? '#i-x' : '#i-menu');
+  };
+  burger.addEventListener('click', () => setMenu(!menu.classList.contains('open')));
+  menu.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
+  addEventListener('keydown', e => { if (e.key === 'Escape') { setMenu(false); } });
+
+  /* reveal on scroll */
+  const rev = $$('.reveal');
+  if ('IntersectionObserver' in window && !reduce) {
+    const io = new IntersectionObserver(es => es.forEach(en => {
+      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+    }), {threshold:.12, rootMargin:'0px 0px -6% 0px'});
+    rev.forEach(el => io.observe(el));
+  } else rev.forEach(el => el.classList.add('in'));
+
+  /* tabs accessibili (frecce, Home, End) */
+  const tabs = $$('[role="tab"]'), panels = $$('[role="tabpanel"]');
+  const select = (tab, focus) => {
+    tabs.forEach(t => { const on = t === tab; t.setAttribute('aria-selected', on); t.tabIndex = on ? 0 : -1; });
+    panels.forEach(p => {
+      const on = p.id === tab.getAttribute('aria-controls');
+      p.hidden = !on; p.classList.remove('in');
+      if (on) { void p.offsetWidth; p.classList.add('in'); }
+    });
+    if (focus) tab.focus();
+    tab.scrollIntoView({block:'nearest', inline:'center', behavior: reduce ? 'auto' : 'smooth'});
+  };
+  tabs.forEach((t, i) => {
+    t.addEventListener('click', () => select(t));
+    t.addEventListener('keydown', e => {
+      const k = e.key; let n = null;
+      if (k === 'ArrowDown' || k === 'ArrowRight') n = tabs[(i+1) % tabs.length];
+      if (k === 'ArrowUp' || k === 'ArrowLeft') n = tabs[(i-1+tabs.length) % tabs.length];
+      if (k === 'Home') n = tabs[0];
+      if (k === 'End') n = tabs[tabs.length-1];
+      if (n) { e.preventDefault(); select(n, true); }
+    });
+  });
+
+  /* pulsanti "prenota X": preselezionano il servizio nel form */
+  const serviceSel = $('#service');
+  $$('[data-pick]').forEach(a => a.addEventListener('click', () => {
+    const v = a.dataset.pick;
+    const opt = [...serviceSel.options].find(o => o.text === v);
+    if (opt) serviceSel.value = opt.value || opt.text;
+  }));
+
+  /* respirazione guidata: 4s inspira / 6s espira, 3 cicli */
+  const breath = $('#breath'), label = $('#breathLabel'), bBtn = $('#breathBtn');
+  let timer = null, running = false;
+  const stop = () => {
+    clearTimeout(timer); running = false;
+    breath.classList.remove('inhale','exhale');
+    label.textContent = 'Bravo/a. Ti aspettiamo.';
+    bBtn.textContent = 'Ripeti'; bBtn.setAttribute('aria-pressed','false');
+  };
+  const cycle = (n) => {
+    if (!running) return;
+    if (n === 0) return stop();
+    label.textContent = 'Inspira…';
+    breath.classList.remove('exhale'); breath.classList.add('inhale');
+    timer = setTimeout(() => {
+      if (!running) return;
+      label.textContent = 'Espira…';
+      breath.classList.remove('inhale'); breath.classList.add('exhale');
+      timer = setTimeout(() => cycle(n-1), 6000);
+    }, 4000);
+  };
+  bBtn.addEventListener('click', () => {
+    if (running) { stop(); label.textContent = 'Prova qui'; bBtn.textContent = 'Respira con noi (30 sec)'; return; }
+    running = true; bBtn.setAttribute('aria-pressed','true'); bBtn.textContent = 'Ferma'; cycle(3);
+  });
+
+  /* form → WhatsApp */
+  const form = $('#bookForm'), nameI = $('#name'), nameE = $('#nameErr');
+  nameI.addEventListener('input', () => { nameI.removeAttribute('aria-invalid'); nameE.textContent = ''; });
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const name = nameI.value.trim();
+    if (!name) {
+      nameI.setAttribute('aria-invalid','true');
+      nameE.textContent = 'Scrivi il tuo nome così sappiamo come chiamarti.';
+      nameI.focus(); return;
+    }
+    const d = new FormData(form);
+    const lines = [
+      `Buongiorno MAYA, sono ${name}.`,
+      `Vorrei richiedere un appuntamento per: ${d.get('service')}.`,
+      `Preferenza: ${d.get('day')}, ${d.get('slot')}.`
+    ];
+    if (d.get('phone')) lines.push(`Il mio numero: ${d.get('phone')}.`);
+    if (d.get('note').trim()) lines.push(`Note: ${d.get('note').trim()}`);
+    lines.push('Grazie!');
+    const url = 'https://wa.me/393462192901?text=' + encodeURIComponent(lines.join('\n'));
+    window.open(url, '_blank', 'noopener');
+  });
+
+  $('#year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
